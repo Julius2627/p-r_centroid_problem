@@ -64,7 +64,7 @@ DEPENDENCY="afterany:$(IFS=:; echo "${ARRAY_JOB_IDS[*]}")"
 
 # TODO: Mail-Adresse eintragen. Der Merge-Job laeuft erst nach dem letzten Task,
 # seine END-Mail bedeutet also "alles fertig".
-MERGE_JOB_ID=$(sbatch --parsable --mail-type=END,FAIL --mail-user="name@uni-beispiel.de" \
+MERGE_JOB_ID=$(sbatch --parsable --mail-type=END,FAIL --mail-user="julius.hoffmann@kit.edu" \
     --dependency="$DEPENDENCY" merge_results.sh)
 echo "  -> Merge-Job: $MERGE_JOB_ID (startet automatisch, sobald alle $TOTAL Tasks fertig sind)"
 
