@@ -5,7 +5,7 @@
 
 # TODO: einmalig einen Workspace anlegen:  ws_allocate gurobi_ws 60
 #       (Laufzeit in Tagen anpassen; vor Ablauf ggf. mit ws_extend verlaengern)
-WSROOT="$(ws_find gurobi_ws)"
+WSROOT="$(ws_find pr_classic_ws)"
 REPO="$WSROOT/repo"
 VENV_DIR="$WSROOT/venv"
 
