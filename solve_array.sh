@@ -2,7 +2,7 @@
 #SBATCH --job-name=gurobi_solve
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=6                # ggf. an Threads-Setting in deinen Methoden anpassen
-#SBATCH --mem=18G                          # TODO: an Modellgroesse anpassen
+#SBATCH --mem=66G                          # TODO: an Modellgroesse anpassen
 #SBATCH --time=02:40:00                   # TODO: deutlich > internes --time-limit unten
 #SBATCH --partition=cpu
 #SBATCH --output=logs/%x_%A_%a.out
